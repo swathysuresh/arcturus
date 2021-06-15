@@ -1,0 +1,588 @@
+@media screen and (min-width: 320px) and (max-width:720px){
+    /*----------Bollywood----------------------------*/
+    .Heading{
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        font-size: 30px;
+        color: black;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        display: flex;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+    .mainHeadingOne{
+        font-size: small;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    .mainHeadingTwo{
+        display: inline;
+        font-style: bold;
+    }
+    .bHead{
+        width: 0;
+        height: 0;
+        margin: 0;
+        visibility: hidden;
+    }
+    hr.headLine{
+        width: 80rem;
+        border: 1px solid rgb(219, 215, 215);
+    }
+    .bollywoodContainer{
+        font-family: 'Montserrat';
+        font-size: 20px;
+        margin-top: 3rem;
+    }
+    .subHeading{
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    hr.underlineLatest{
+        width: 3rem;
+        margin-left:0;
+        border: 1px solid #F08080;
+    
+    }
+    hr.underline{
+        width: 3rem;
+        margin:inherit;
+        border: 1px solid #F08080;
+    }
+
+    .topPosts{
+        font-family: Montserrat;
+        font-size: large;
+        margin-right: 4rem;
+        width:20rem;
+    }
+    .styleHeading{
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        font-size: 20px;
+        padding-top: 2rem;
+    
+    }
+    #topPostsImg{
+        margin-top: 2rem;
+    }
+    .topPostsHead{
+        display: flex;
+        justify-content: space-between;
+    }
+    #NumOne{
+        font-family: Montserrat;
+        font-size: xx-large;
+        font-style: bold;
+        color: lightgray;
+    }
+    .bAdvt{
+        visibility: hidden;
+    }
+    /*----------Technology----------------------------*/
+    #tLine{
+        width: 100vw;
+
+    }
+    .tStart{
+        margin-top: 2rem;
+        border: 1px solid #03A87C; 
+        justify-content: right;
+        height: 1rem;
+        font-size: small;
+        font-family:  Montserrat;
+        color: #03A87C; 
+    }
+    #tContainer{
+        display: flex;
+        width:30rem;
+        justify-content: space-between;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #tSubHead{
+        margin-left: 2rem;
+        font-size: 20px;
+        font-style: bold;
+    }
+    .techContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .techContainerTwo{
+        margin-top: 1rem;
+        font-family: Georgia;
+    }
+    #snippetImage{
+        margin-top: 1rem;
+        width: 100%;
+        margin-left: 0rem;   
+    }
+    #reactImage{
+        margin-bottom: 1rem;
+        width:100%;
+    }
+    
+    .buttonStyle{
+        background-color: #F2F2F2;
+        color: #A2A2A2;
+        border: none;
+        margin: 1rem;
+    }
+
+    #author{
+        margin: 1rem;
+
+    }
+    #techName{
+        margin-bottom:1rem;
+        margin-top: 1rem;
+    }
+    #tFooter{
+        background-color: #FAFAFA;
+        width: 100vw;
+        height: auto;
+    }
+    .footerHead{
+        font-family: Montserrat;
+        color: black;
+    }
+    #footerFlex{
+        margin-top: 2rem;
+    }
+    .techLogo{
+        visibility: hidden;
+    }
+    .tLeftImage{
+        margin:0;
+        width:0;
+        height:0;
+        visibility: hidden;
+    }
+
+    /*----------------------------------------Home------------------------------------*/
+    .imageLeft{
+        width:100%;
+        height: 60vw;
+        margin:0;
+        background-image: url(https://blueskycamp.in/wp-content/uploads/2021/01/kasol-2.jpg);
+    }
+    .imageHeading{
+        visibility: hidden;
+    }
+    .imageDesc{
+        visibility: hidden;
+    }
+    .imageRightContainer{
+        visibility: hidden;
+        margin:0;
+    }
+    .menu{
+        font-family: 'Montserrat', sans-serif;
+        list-style-type: none;
+        margin-left: 10rem;
+        padding:0;
+        overflow: hidden;
+    }
+    .listItem{
+        margin-bottom: 1rem;
+    
+    }
+    .linkStyle{
+        color: black;
+        text-decoration-line: none;
+    }
+
+
+
+}
+@media screen and (min-width: 720px) and (max-width:1900px){
+    .Heading{
+        font-family: Montserrat;
+        color: black;
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0px;
+        opacity: 1;
+    }
+    .mainHeadingOne{
+        font-size: large;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    .mainHeadingTwo{
+        display: inline;
+        font-weight: 800;
+        font-size: xx-large;
+        font-style: bold;
+    }
+
+
+    .menu{
+        font-family: 'Montserrat', sans-serif;
+        list-style-type: none;
+        margin-left: 10rem;
+        padding:0;
+        overflow: hidden;
+    }
+    
+    .listItem{
+        float: left;
+        margin-left:6rem;
+        margin-top: 5rem;
+    
+    }
+    
+    .bannerImage{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10rem;
+        margin-left: 5rem;
+        width:100rem;
+        height: 50rem;
+    }
+    
+    .imageRightContainer{
+        height: 100%;
+    }
+    
+    .imageLeft{
+        width: 40rem;
+        height: 100%;
+        background-image: url(https://blueskycamp.in/wp-content/uploads/2021/01/kasol-2.jpg);
+        background-repeat: no-repeat;
+    
+        
+    }
+    
+    .imageRight{
+        width: 30rem;
+        height: 35%;
+        background-repeat: no-repeat;
+        background-image: url('https://blueskycamp.in/wp-content/uploads/2021/01/kasol-2.jpg');
+        margin-right: 25rem;
+        margin-bottom: 2rem;
+    }
+    
+    .imageHeading{
+        padding-top: 40%;
+        padding-left: 10%;
+        color: white;
+        font-weight: bold;
+        
+    }
+    
+    .imageDesc{
+        padding-left: 10%;
+        color: white;
+        font-weight: lighter;
+    }
+    
+    .styleHeading{
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        font-size: 30px;
+    
+    }
+    .subHeading{
+        font-family: 'Montserrat';
+        margin-left: 7rem;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    hr.underline{
+        width: 3rem;
+        margin:inherit;
+        border: 1px solid #F08080;
+    } 
+    hr.underlineLatest{
+        width: 3rem;
+        margin-left: 7rem;
+        border: 1px solid #F08080;
+    
+    }
+    
+    hr.articleLine{
+        margin-left: 6rem;
+        width: 40rem;
+        border: 1px solid rgb(219, 215, 215);
+    }
+    hr.headLine{
+        margin-left: 6rem;
+        width: 80rem;
+        border: 1px solid rgb(219, 215, 215);
+    }
+    hr.storiesLine{
+        margin: 1rem;
+        height: 20rem;
+        border: 1px solid rgb(241, 238, 238);
+    }
+    hr.articleLineStories{
+        margin-top: 2rem;
+        margin-left: 7rem;
+        width: 100%;
+        border: 1px solid rgb(219, 215, 215);
+    }
+    .articlesContainer{
+        font-family: 'Montserrat';
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .article{
+        width: 25rem;
+        padding-left: 6rem;
+    }
+    
+    .verticleArticle{
+        width: 15rem;
+        font-size: smaller;
+    }
+    .articleContainerTwo{
+        font-family: Montserrat;
+        display: flex;
+        font-size: small;
+        width: 25rem;
+        margin-left: 7rem;
+        margin-bottom: 2rem;
+    
+    }
+    .articleImage{
+        /* to shrink image
+        max-height: 100px;
+        max-width:inherit; */
+        /*to crop image*/
+        width:100%;
+        height:auto;
+        
+    }
+    .articleImageContainer{
+        width: 1000px;
+        height:150px;
+        margin-right: 1rem;
+    }
+    .BigArticle{
+        font-family: Montserrat;
+        display: flex;
+        width: 80rem;
+        padding-left: 8rem;
+        margin-bottom: 2rem; 
+        margin-top: 2rem;
+        height: 25rem;
+        font-size: larger;
+    }
+    #bigImage{
+        margin-right: 1rem;
+    }
+    
+    .advertisement{
+        border: 1px solid #707070;
+        margin-left: 20rem; 
+        padding-left: 8rem; 
+        padding-right: 6rem;
+        padding-top:10rem;
+        font-size: large;
+    
+    }
+    #footerImage{
+        margin-left: 6rem;
+        width:100%;
+        height:100%;
+    }
+    #footer{
+        display: flex;
+        width: 60rem;
+        margin-bottom: 2rem; 
+        margin-top: 2rem;
+        height: 25rem;
+    }
+    .containerThree{
+        display:flex;
+        justify-content: space-between;
+     
+    }
+    .topPosts{
+        font-family: Montserrat;
+        font-size: large;
+        margin-right: 4rem;
+        width:20rem;
+    }
+    #topPostsImg{
+        margin-top: 2rem;
+    }
+    .topPostsHead{
+        display: flex;
+        justify-content: space-between;
+    }
+    #NumOne{
+        font-family: Montserrat;
+        font-size: xx-large;
+        font-style: bold;
+        color: lightgray;
+    }
+    .containerStories{
+        font-family: Montserrat;
+        font-size: large;
+        margin-left: 6rem;
+        margin-top: 6rem;
+        display: flex;
+        justify-content: space-arounds;
+    }
+    .stories{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .postsImage{
+        width:100%;
+        height:auto;
+    }
+    .postsImageContainer{
+        width: 150px;
+        height:150px;
+    }
+    .linkStyle{
+        color: black;
+        text-decoration-line: none;
+    }
+    
+    /*-----------------Bollywood---------------------------*/
+    
+    .bollywoodContainer{
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
+    
+    .bAdvt{
+        margin-top: 3rem;
+        border: 1px solid #707070; 
+        justify-content: center;
+        height: 20rem;
+        padding-left: 5rem;
+        padding-top: 13rem;
+        font-size: large;
+    }
+    
+    #bTop{
+        margin-bottom: 2rem;
+    }
+    /*-----------------------------------Technology-----------------------------------*/
+    #tLine{
+        width: 100vw;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    #tHead{
+        justify-content: left;
+        margin-left: 15rem;
+    }
+    .tStart{
+        margin-top: 4rem;
+        padding-top: 1rem;
+        border: 4px solid #03A87C; 
+        justify-content: center;
+        height: 2rem;
+        font-size: small;
+        font-family:  Montserrat;
+        color: #03A87C; 
+    }
+    #tContainer{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #tSubHead{
+        margin-left: 38rem;
+    
+    
+    }
+    .techContainer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        margin-left: 38em;
+        width: 677px;
+    }
+    .techContainerTwo{
+        margin-top: 1rem;
+        margin-left: 38em;
+        width: 677px;
+        font-family: Georgia;
+    }
+    #snippetImage{
+        width: 673px;
+        margin: 3rem;
+        /* border:5px, solid, black;
+        box-shadow: grey; */
+        
+    }
+    #reactImage{
+        width:100%;
+        height:auto;
+        margin-bottom: 3rem;
+        
+    }
+    .tLeftImage{
+        position: absolute;
+        margin-left: 20rem;
+        margin-top: 10rem;
+    }
+    
+    #tTopImage{
+        margin-bottom: 1rem;
+    }
+    
+    .buttonGroup{
+        display: flex;
+        justify-content: left;
+    
+    }
+    .buttonStyle{
+        background-color: #F2F2F2;
+        color: #A2A2A2;
+        border: none;
+        margin: 1rem;
+    }
+    .techContainerThree{
+        display: flex;
+    }
+    #author{
+        margin: 1rem;
+        margin-left: 3rem;
+    }
+    #techName{
+        margin-bottom:1rem;
+        margin-top: 1rem;
+    }
+    #tFooter{
+        background-color: #FAFAFA;
+        width: 100vw;
+        height: auto;
+    }
+    .footerHead{
+        font-family: Montserrat;
+        color: black;
+        margin-left: 10rem;
+    }
+    #footerFlex{
+        margin-top: 2rem;
+        margin-left: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
