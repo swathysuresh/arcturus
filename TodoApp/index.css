@@ -1,0 +1,477 @@
+body{
+    margin: 0em;
+    width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .mobileheading{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+    .heading{
+        font-family: 'Noto Sans SC';
+        color: black;
+        font-size: 25px;
+    }
+    .fa-plus-circle{
+        color:red;
+        font-size: 30px;
+    }
+    .cards{
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+        font-family: 'Noto Sans SC';
+        color: black;
+    }
+    .card{
+        padding: 10px;
+        border: 0.5px solid red;
+        border-width: thin;
+        border-radius: 5px;
+        box-shadow: 4px 4px 1px 0px lightgrey;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .mpview{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .fa-arrow-circle-left{
+        margin-top: 5px;
+        color:red;
+        font-size: 30px;
+    }
+    .mpcontainer2{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
+    .mptodoParis{
+        width: 100px;
+        height: 270px;
+        font-family: 'Noto Sans SC';
+        font-style: bold;
+        font-weight: 700;
+        border: 0.1em solid red;
+        border-radius: 1em;
+        box-shadow: 10px 10px 15px 0px lightgrey;
+        padding: 20px;
+        padding-left: 50px;
+ 
+        
+    }
+    .mptodoHeadingParis{
+        font-family: 'Noto Sans SC';
+        color: red;
+        font-size: 13px;
+        padding-bottom: 5px;
+    }
+    .mptodoContentParis{
+        font-family: 'Noto Sans SC';
+        color: red;
+        text-decoration-line: line-through;
+        font-size: 13px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+
+    }
+
+    .mptodoCheckboxParis{
+        font-family: 'Noto Sans SC';
+        color: black;
+        font-size: 12px;
+
+    }
+    .mpcircle{
+        margin-top: 150px;
+        margin-left: 90px;
+    }
+
+
+
+
+    .background3{
+        width: 468px;
+        height: 576px;
+        background-image: url(./mtasks.png);
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container3{
+        width: 468px;
+        height: 576px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .maddNewItem{
+        margin-left: 60px;
+        border: 0.1em solid red;
+        border-radius: 1em;
+        background-color: rgb(255,255,255); /* Fallback color */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 300px;
+        text-align: center;
+    }
+
+    .mitemHeading{
+        margin-left: 1.5em;
+        margin-bottom: 0.7em;
+        font-family: 'Noto Sans SC';
+        font-size: 1.5em;
+        font-weight: 700;
+        color: red;
+    }
+
+    .minputText{
+        margin-left: 1em;
+        margin-bottom: 0.7em;
+        font-family: 'Noto Sans SC';
+        font-size: 1.5em;
+        font-weight: 700;
+        border-color: red;
+    }
+    .addItemButton{
+
+        width: 6em;
+        margin-left: 2.5em;
+        margin-bottom: 0.7em;
+        font-family: 'Noto Sans SC';
+        font-size: 1em;
+        font-weight: 900;
+        padding: 0.6em;
+        border: none;
+        background: red;
+        color: white;
+        border-radius: 1.5em;
+    }
+    .background4{
+        width: 468px;
+        height: 576px;
+        background-image: url(./mparis.png);
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 480px){
+        
+    .heading1{
+        display: inline;
+        margin-left: 8em;
+        margin-top: 10em;
+        font-family: 'adobe-clean', sans-serif;
+        color: black;
+        font-weight: 900;
+        font-size: 3em;
+    
+    }
+    .heading2{
+        display: inline;
+        padding-right: 8em;
+        font-family: 'Noto Sans SC';
+        font-size: 3em;
+        font-weight: 300;
+        color: grey
+    }
+
+
+    .addButton{
+        margin-top: 8em;
+        border: none;
+        display: inline;
+        align-content: center;
+        width: 1.5em;
+        height: 1.5em;
+        text-decoration: none;
+        font-family: 'Noto Sans SC';
+        font-size: 1.75em;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border-radius:50%;
+    }
+
+
+    .addText{
+        display: inline;
+        top:9.5em;
+        right: 17em;
+        font-family: 'Noto Sans SC';
+        font-size: 1.5em;
+        font-weight: 600;
+        color: grey;
+
+    }
+
+    .todoContainer{
+        height: 15em;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        margin-left: 20em;
+        margin-right: 20em;
+        margin-bottom: 2em;
+    }
+
+    .todo1{
+        font-family: 'Noto Sans SC';
+        width: 12em;
+        height: 20em;
+        border: 0.1em solid red;
+        border-radius: 1em;
+        box-shadow: 10px 10px 15px 0px lightgrey;
+        
+    }
+    .todo2{
+        font-family: 'Noto Sans SC';
+        width: 12em;
+        height: 20em;
+        border: 0.1em solid red;
+        border-radius: 1em;
+        box-shadow: 10px 10px 15px 0px lightgrey;
+
+    }
+    .todo3{
+
+        font-family: 'Noto Sans SC';
+        width: 12em;
+        height: 20em;
+        border: 0.1em solid red;
+        border-radius: 1em;
+        box-shadow: 10px 10px 15px 0px lightgrey;
+    }
+    .todoHeading{
+        text-align: end;
+        margin-right: 0em;
+        font-weight: 200;
+        font-size: 1.5em;
+        padding-left: 2em;
+        padding-bottom: 1.5em;
+        color: red;
+        text-decoration: underline black;
+        text-decoration-thickness: 0em;
+        text-underline-offset: 0.5em;
+    }
+    .todoContent{
+        font-weight: 700;
+        font-size: 1.25em;
+        padding-left: 2em;
+        text-decoration:line-through;
+        text-decoration-thickness: 0.2em;
+        color: red;
+    }
+    /* .todoList{
+        font-weight: 600;
+        font-size: 1.25em;
+        padding-left: 2em;
+        list-style-type: "\2610  "
+        
+    } */
+    .todoCheckbox{
+        font-family: 'Noto Sans SC';
+        font-weight: 700;
+        font-size: 1.25em;
+        font-weight: 600;
+        font-size: 1.25em;
+        padding-left: 1em;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------*/
+
+    .mainHeading{
+        margin-left: 20em; 
+        margin-top: 3em;
+        font-family: 'Noto Sans SC';
+    }
+
+    .backButton{
+        margin-top: 0em;
+        margin-left: 27em;
+        border: none;
+        align-content: center;
+        width: 1.5em;
+        height: 1.5em;
+        text-decoration: none;
+        font-family: 'Noto Sans SC';
+        font-size: 1.75em;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border-radius:50%;
+    }
+    .backText{
+        font-family: 'Noto Sans SC';
+        font-size: 1.75em;
+        font-weight: 700;
+        color: gray;
+    }
+    .container2{
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .todoParis{
+        font-family: 'Noto Sans SC';
+        width: 17em;
+        height: 25em;
+        border: 0.1em solid red;
+        border-radius: 1em;
+        box-shadow: 10px 10px 15px 0px lightgrey;
+        
+    }
+    .todoHeadingParis{
+        text-align: end;
+        padding: 0em;
+        margin-right: 0em;
+        margin-left: 1.5em;
+        margin-bottom: 3em;
+        font-weight: 200;
+        font-size: 1.8em;
+        color: red;
+        text-decoration: underline black;
+        text-decoration-thickness: 0em;
+        text-underline-offset: 0.5em;
+    }
+    .todoContentParis{
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.6em;
+        padding-left: 2em;
+        text-decoration:line-through;
+        text-decoration-thickness: 0.2em;
+        color: red;
+    }
+
+    .todoCheckboxParis{
+        text-align: center;
+        font-family: 'Noto Sans SC';
+        font-weight: 700;
+        font-size: 1.6em;
+        font-weight: 600;
+        font-size: 1.25em;
+        padding-left: 1em;
+    }
+
+
+    .addButtonParis{
+        border: none;
+        margin-left: 8em;
+        margin-top: 3em;
+        width: 1.5em;
+        height: 1.5em;
+        text-decoration: none;
+        font-family: 'Noto Sans SC';
+        font-size: 1.75em;
+        font-weight: 700;
+        background: red;
+        color: white;
+        border-radius:50%;
+    }
+    /*_________________________________________________________________________________________________________*/
+
+
+    .container3{
+        width: 1361px;
+        height: 737px;
+        /* background-image: url(./backgrounditem.png);
+        filter: blur(8px);
+        background-size: 100% auto;
+        background-repeat: no-repeat; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .background1{
+        width: 1361px;
+        height: 737px;
+        background-image: url(./background2.png);
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .addNewItem{
+        /* margin-top: 10em; */
+        border: 0.1em solid red;
+        border-radius: 1em;
+        background-color: rgb(255,255,255); /* Fallback color */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 23em;
+        text-align: center;
+    }
+
+    .itemHeading{
+        margin-left: 1.5em;
+        margin-bottom: 0.7em;
+        font-family: 'Noto Sans SC';
+        font-size: 1.5em;
+        font-weight: 700;
+        color: red;
+    }
+
+    .inputText{
+        margin-left: 1em;
+        margin-bottom: 0.7em;
+        font-family: 'Noto Sans SC';
+        font-size: 1.5em;
+        font-weight: 700;
+        border-color: red;
+    }
+
+    .addItemButton{
+
+        width: 6em;
+        margin-left: 2.5em;
+        margin-bottom: 0.7em;
+        font-family: 'Noto Sans SC';
+        font-size: 1em;
+        font-weight: 900;
+        padding: 0.6em;
+        border: none;
+        background: red;
+        color: white;
+        border-radius: 1.5em;
+    }
+
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+    .background2{
+        width: 1361px;
+        height: 653px;
+        background-image: url(./backgrounditem.png);
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
