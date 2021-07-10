@@ -1,0 +1,102 @@
+.menu{
+    margin-top: 2rem;
+}
+.span__curr{
+    margin-left: 2rem;
+}
+.span__lang{
+    margin-left: 4rem;
+}
+.span__profile{
+    margin-left: 50rem;
+    margin-right: 2rem;
+}
+.cart__itemCount{
+    width:5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.cart__itemPrice{
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+/*________________________________________________________________________________________*/
+.mainHeading{
+    color: #FF4252;
+    margin-top: 3rem;
+    margin-left: 45%;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 100%;
+
+}
+
+.menuContainer{
+    display: flex;
+    margin-left: 30%;
+
+}
+    
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: white;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    font-size: small;
+    font-weight: 700;
+    color: grey;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropbtn:hover{
+      color: blue;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 250px;
+  }
+  
+  .column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .column a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
