@@ -5,6 +5,7 @@ function menu(props) {
     return (
         <>
         <div className='menu'>
+        <div className = 'nav'>
         <span className='span__lang'>
             <select id="dropdown__lang">
                 <option value="1">FR</option>
@@ -20,28 +21,38 @@ function menu(props) {
             </select>
         </span>
         <span className = 'span__profile'>
-         <i class="fa fa-user"></i>  
+         <i className="fa fa-user"></i>  
             My Profile
         </span>
         <span className='cart__logo'>
-            <i class="fa fa-shopping-cart"></i>   
+            <i className="fa fa-shopping-cart"></i>   
         </span>
         <span className='cart__itemCount'></span>
         <span className='cart__itemPrice'></span>
         <span className='searchIcon'>
-            <i class="fa fa-search"></i>   
+            <i className="fa fa-search"></i>   
         </span>
         </div>
-        <div className='mainHeading'>
-            iSHOP
+
+        </div>
+
+        <div className='headingContainer'>
+                <div className='mainHeading'>
+                iSHOP</div> 
+            
+            <div className='hamburger__menu'>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         <div className='menuContainer'>
-            <div class="dropdown"><button class="dropbtn">HOME</button></div>
-            <div class="dropdown">
-                <button class="dropbtn">STORE</button>
-                <div class="dropdown-content">  
-                    <div class="row">
-                        <div class="column">
+            <div className="dropdown"><button className="dropbtn">HOME</button></div>
+            <div className="dropdown">
+                <button className="dropbtn">STORE</button>
+                <div className="dropdown-content">  
+                    <div className="row">
+                        <div className="column">
                         <h3>Accessories</h3>
                         <a href='/store/accessories'>AirPort &amp; Wireless</a>
                         <a href='/store/accessories'>AppleCare</a>
@@ -52,13 +63,13 @@ function menu(props) {
                         <a href='/store/accessories'>Car &amp; Travel</a> 
                         <a href='/store/accessories'>Cases &amp; Films</a>
                         </div>
-                        <div class="column">
+                        <div className="column">
                         <h3>Category</h3>
                         <a href='/store/accessories'>Link 1</a>
                         <a href='/store/accessories'>Link 2</a>
                         <a href='/store/accessories'>Link 3</a>
                         </div>
-                        <div class="column">
+                        <div className="column">
                         <h3>Category</h3>
                         <a href='/store/accessories'>Link 1</a>
                         <a href='/store/accessories'>Link 2</a>
@@ -67,10 +78,10 @@ function menu(props) {
                     </div>
                     </div>
                     </div>
-                    <div class="dropdown"><button class="dropbtn">iPHONE</button></div>
-                    <div class="dropdown"><button class="dropbtn">iPAD</button></div>
-                    <div class="dropdown"><button class="dropbtn">MACBOOK</button></div>
-                    <div class="dropdown"><button class="dropbtn">ACCESSORIES</button></div>
+                    <div className="dropdown"><button className="dropbtn">iPHONE</button></div>
+                    <div className="dropdown"><button className="dropbtn">iPAD</button></div>
+                    <div className="dropdown"><button className="dropbtn">MACBOOK</button></div>
+                    <div className="dropdown"><button className="dropbtn">ACCESSORIES</button></div>
                 </div>
         </>
     );

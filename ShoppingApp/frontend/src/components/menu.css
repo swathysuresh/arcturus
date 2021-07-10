@@ -1,5 +1,9 @@
 .menu{
+    display: flex;
+}
+.nav{
     margin-top: 2rem;
+    display: flex;
 }
 .span__curr{
     margin-left: 2rem;
@@ -8,7 +12,7 @@
     margin-left: 4rem;
 }
 .span__profile{
-    margin-left: 50rem;
+    margin-left: 40rem;
     margin-right: 2rem;
 }
 .cart__itemCount{
@@ -21,11 +25,12 @@
     margin-left: 1rem;
     margin-right: 2rem;
 }
+
 /*________________________________________________________________________________________*/
 .mainHeading{
     color: #FF4252;
     margin-top: 3rem;
-    margin-left: 45%;
+    margin-left: 50%;
     font-size: 2rem;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,9 +38,26 @@
 
 }
 
+.hamburger__menu{
+    margin-left: 2rem;
+    width: 20px;
+    height:20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.hamburger__menu > div{
+    width: 100%;
+    height: 3px;
+    background: grey;
+
+}
+
 .menuContainer{
     display: flex;
-    margin-left: 30%;
+    margin-left: 35%;
 
 }
     
@@ -99,4 +121,27 @@
     content: "";
     display: table;
     clear: both;
+  }
+
+  @media (max-width:960px){
+      .nav{
+          display: none;
+      }
+      .menuContainer{
+          display: none;
+      }
+      .headingContainer{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 3rem;
+      }
+      .hamburger__menu{
+        display: flex;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+    .mainHeading{
+        margin-left: 2%;
+        margin-top: 2rem;
+    }
   }
