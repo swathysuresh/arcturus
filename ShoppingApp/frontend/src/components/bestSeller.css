@@ -1,0 +1,33 @@
+.heading{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.list__cat{
+    margin-left: 35%;
+    margin-top: 2rem;
+}
+
+.categories{
+    float: left;
+    margin-right: 1rem;
+    list-style: none;
+}
+#dropdown__cat{
+    display: none;
+    margin-left: 40%;
+    margin-top: 2rem;
+}
+
+@media(max-width:960px){
+    .list__cat{
+        display: none;
+    }
+    #dropdown__cat{
+        display: block;
+    }
+
+}

@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 //import components
 import Menu from './components/menu'
+import BestSeller from './components/bestSeller'
 
 //import screens
 import Home from './screens/Home'
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <Menu />
+      <BestSeller />
       <main>
       
         <Switch>
