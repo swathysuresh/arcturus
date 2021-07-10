@@ -9,9 +9,11 @@ const App = ()=>{
         <>
         <BrowserRouter>
             <Switch>
+                <Route path = '/home'exact><Heading /></Route>
                 <Route path = '/bollywood'exact><Bollywood /></Route>
-                <Route path = '/'exact><Heading /></Route>
                 <Route path = '/technology'exact><Technology /></Route>
+                <Route path = '/'exact><Heading /></Route>
+
             </Switch>
         </BrowserRouter>
         

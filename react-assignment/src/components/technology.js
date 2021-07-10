@@ -2,7 +2,23 @@ import logo from './../images/Mask Group 21.png'
 import logoOne from './../images/rythm.png'
 import logoTwo from './../images/share.png'
 import Article from './article'
-const Technology = () =>{
+import { useState, useEffect } from "react";
+import axios from 'axios';
+
+
+const  Technology = props =>{
+    const [content,setContent] = useState(1);
+    useEffect(()=>{
+        axios.get("http://localhost:3001/technology")
+        .then(res=>{
+            console.log(res.data)
+            setContent(res.data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    },[])
+
     return(
 
         <>
@@ -12,20 +28,20 @@ const Technology = () =>{
             <div className= 'mainHeadingOne'>The</div>
             <div className= 'mainHeadingTwo'> Siren</div>
         </div>
-        <div class='tStart'>Get Started</div>
+        <div className='tStart'>Get Started</div>
         </div>
         <hr id='tLine' className='headLine'/>
-        <div id='tSubHead' className= 'mainHeadingTwo'>5 Ways to animate a React app.</div>
+        <div id='tSubHead' className= 'mainHeadingTwo'>{content.heading}</div>
         <div className='techContainer'>
             <div className='techImage'>
                 <img className='techImage' src = {logo} alt='techImage'/> 
             </div>
             <div className='techPerson'>
-                <div id='techName'>Dmitry Nozhenko</div>
-                <div id='techRead'>Jan 28 2019,-10 min read</div>
+                <div id='techName'>{content.author}</div>
+                <div id='techRead'>{content.read}</div>
             </div>
             <div className='techLogo'>
-               knfjlenb
+               logo
             </div>
 
         </div>
@@ -39,17 +55,12 @@ const Technology = () =>{
         <div className='techContainerTwo'>
 
             <div>
-                <img id='reactImage' src='https://miro.medium.com/max/2456/1*1Z177dpTeAp7uEFc5Zx2xg.png' alt='reactImage' />
+                <img id='reactImage' src={content.reactImage} alt='reactImage' />
             </div>
 
-            <div id='techDetails'>Animation in ReactJs app is a popular topic and there are many ways to create different
-                types of animations.Many developers create animation exclusively using css and adding 
-                classes to HTML tags. This is a great way and you should use it. If you want to create 
-                complex animations you can pay attention to GreenSock. GreenSock is the most powerful 
-                animation platform. There are also a lot of libraries, components for creating animation 
-                ct. Let’s talk about them</div>
+            <div id='techDetails'>{content.techDetails}</div>
             <div id='snippetImage'>
-                <img src = 'https://i.redd.it/i7gcp34a0cg61.jpg' alt='codeSnippet'></img>
+                <img src = {content.snippetImage} alt='codeSnippet'></img>
             </div>
             <div className='buttonGroup'>
                 <button className='buttonStyle'>Reset</button>
@@ -65,8 +76,8 @@ const Technology = () =>{
             </div>
             <div id='author'className='techPerson'>
                 <div>WRITTEN BY</div>
-                <div id='techName'>Dmitry Nozhenko</div>
-                <div id='techRead'>Jan 28 2019,-10 min read</div>
+                <div id='techName'>{content.author}</div>
+                <div id='techRead'>{content.read}</div>
             </div>
             </div>
             <hr></hr>
@@ -87,4 +98,5 @@ const Technology = () =>{
         </>
     );
 }
+
 export default Technology;

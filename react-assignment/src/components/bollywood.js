@@ -3,8 +3,22 @@ import { NavLink } from "react-router-dom";
 import './../index.css'
 import SubArticle from './subArticle';
 import Posts from './posts';
+import { useState, useEffect } from "react";
+import axios from 'axios';
 
-const Bollywood = () =>{
+
+const Bollywood = props =>{
+    const [content,setContent] = useState(1);
+    useEffect(()=>{
+        axios.get("http://localhost:3001/bollywood")
+        .then(res=>{
+            console.log(res.data)
+            setContent(res.data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    },[])
 
     return(
          <>
@@ -49,13 +63,13 @@ const Bollywood = () =>{
                 <div className='topPosts'>
                             <div className='styleHeading'>Top Posts</div>
                             <hr id= 'bTop' className='underline'/>
-                            <img id= 'topPostsImg' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu0akqaazC8bOyBMzd-kevQXn9uFnDnVL-zQ&usqp=CAU' alt='bollywoodImage'/>
+                            <img id= 'topPostsImg' src={content.topPostsImage} alt='bollywoodImage'/>
                             <div className='topPostsHead'>
-                                <div className='styleHeading'>VR, AR, and IoT Tech Proving Invaluable in Retail</div>
+                                <div className='styleHeading'>{content.articleHeading}</div>
                                 <div id='NumOne'>1</div>
                             </div>
-                            <div>Date</div>
-                            <hr class='postsLine'/>
+                            <div>{content.articleDate}</div>
+                            <hr className='postsLine'/>
                             <Posts />
                             <div className='bAdvt'>Advertisement</div>
 
@@ -65,4 +79,5 @@ const Bollywood = () =>{
         
     );
 }
+
 export default Bollywood;

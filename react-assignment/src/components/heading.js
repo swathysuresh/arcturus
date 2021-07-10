@@ -6,6 +6,7 @@ import Latest from './theLatest'
 import LatestArticle from './latestArticle'
 import LatestStories from "./latestStories";
 
+
 const Heading = ()=>{
     return(
         <>
@@ -35,4 +36,5 @@ const Heading = ()=>{
         </>
     );
 }
+
 export default Heading;

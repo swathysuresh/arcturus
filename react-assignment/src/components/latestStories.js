@@ -1,4 +1,19 @@
-const LatestStories = ()=> {
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+    
+const LatestStories = props =>{
+    const [content,setContent] = useState(1);
+    useEffect(()=>{
+        axios.get("http://localhost:3001/home")
+        .then(res=>{
+            console.log(res.data)
+            setContent(res.data)
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    },[])
     return(
         <>
         <div className='containerLatestStories'>
@@ -10,33 +25,21 @@ const LatestStories = ()=> {
             <div className='containerStories'>
             
                 <div className='stories'>
-                    <div className='styleHeading'>VR, AR, and IoT Tech Proving Invaluable in Retail</div>
-                    <p>Virtual reality and augmented reality are taking ground with the retail 
-                            sector, according to recent research conducted by ICX Association. The 
-                            report shows a clear upward trend, with the value of this technology in the
-                            retail sector estimated to reach $1.6 billion by 2025.
-                    </p>
-                    <div>Date</div>
+                    <div className='styleHeading'>{content.articleHeading}</div>
+                    <p>{content.articleContentShort}</p>
+                    <div>{content.articleDate}</div>
                 </div>
                 <hr className = 'storiesLine'/>
                 <div className='stories'>
-                    <div className='styleHeading'>VR, AR, and IoT Tech Proving Invaluable in Retail</div>
-                    <p>Virtual reality and augmented reality are taking ground with the retail 
-                            sector, according to recent research conducted by ICX Association. The 
-                            report shows a clear upward trend, with the value of this technology in the
-                            retail sector estimated to reach $1.6 billion by 2025.
-                    </p>
-                    <div>Date</div>
+                    <div className='styleHeading'>{content.articleHeading}</div>
+                    <p>{content.articleContentShort}</p>
+                    <div>{content.articleDate}</div>
                 </div>
                 <hr className = 'storiesLine'/>
                 <div className='stories'>
-                    <div className='styleHeading'>VR, AR, and IoT Tech Proving Invaluable in Retail</div>
-                    <p>Virtual reality and augmented reality are taking ground with the retail 
-                            sector, according to recent research conducted by ICX Association. The 
-                            report shows a clear upward trend, with the value of this technology in the
-                            retail sector estimated to reach $1.6 billion by 2025.
-                    </p>
-                    <div>Date</div>
+                    <div className='styleHeading'>{content.articleHeading}</div>
+                    <p>{content.articleContentShort}</p>
+                    <div>{content.articleDate}</div>
                 </div>
             </div>
         </div>
