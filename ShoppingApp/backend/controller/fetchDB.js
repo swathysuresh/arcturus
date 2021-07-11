@@ -1,13 +1,14 @@
 const products = require('../models/products');
 
-const getAllProductsFromDB = async (res) =>{
+const getAllProductsFromDB = async (req, res) =>{
     try {
         const productsFromDB = await products.find({});
         console.log("Product details from DB fetched successfully");
+        console.log("DEBUG-----------------" + res.json(productsFromDB));
         res.json(productsFromDB);
     } catch (error) {
         console.error("Unable to fetch product details from DB");
-        res.status(500).json({message:"Oops Server error"});
+        // res.status(500).json({message:"Oops Server error"});
     }
 }
 

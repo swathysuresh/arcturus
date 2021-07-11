@@ -8,6 +8,12 @@ const app = express();
 
 app.use(express.json());
 
+
+app.use((request,response,next)=>{
+    response.setHeader('Access-Control-Allow-Origin','*')
+    next()
+})
+
 app.use('/api/products',productRoutes);
 
 connectDB();
