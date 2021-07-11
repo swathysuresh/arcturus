@@ -83,14 +83,6 @@ function menu(props) {
                     <div className="dropdown"><button className="dropbtn">MACBOOK</button></div>
                     <div className="dropdown"><button className="dropbtn">ACCESSORIES</button></div>
                 </div>
-                <div className='bannerImage'>
-                    <div className = 'bannerText'>
-                        <div className='imageHead'>iPhone X</div>
-                        <div className='imagePara'>Dolore dolor sunt minim dolore. Quis sunt commodo aliqua aliquip duis amet deserunt duis est sint. Deserunt 
-                        reprehenderit do nisi ullamco duis incididunt do anim occaecat nisi qui non dolore amet.</div>
-                        <div className='imageMore'>MORE</div>
-                    </div>
-                </div>
         </>
     );
 }
